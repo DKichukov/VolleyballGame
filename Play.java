@@ -28,7 +28,6 @@ public class Play {
         FileManager.writeToFile(team1.getPlayers(),"team1");
         FileManager.writeToFile(team2.getPlayers(),"team2");*/
 //---------------------------------------------------------------------------------------------------------------------
-//        FileManager.writeToFile(team1.getPlayers(),"team1");
 
         // Test the game..
         FileManager.readFromFile(team1, "team1.csv");

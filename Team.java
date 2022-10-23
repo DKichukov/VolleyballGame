@@ -82,7 +82,8 @@ public class Team implements Playable, Comparator<Team> {
         return  "teamName='" + this.teamName +
                 ", stadiumName='" + this.stadiumName +
                 ", coachName='" + this.coachName +
-                ", players=" +"\n"+ getPlayers()+ "\n";
+                ", players=" + this.players.values()+ "\n"+
+        "----------------------------------------------------------";
 
    }
 
