@@ -1,4 +1,4 @@
-package Homework;
+package Game;
 
 public class Play {
 
@@ -37,13 +37,18 @@ public class Play {
         System.out.println("---------- Teams info ----------");
         System.out.println(team1 + "-----------------------------------------" +"\n" + team2);
 
+        //test to change parameter of the player
         System.out.println(team1.getPlayers().get("Dragan").getHealth());
         team1.getPlayers().get("Dragan").setHealth(3);
-        System.out.println(team1.getPlayers().get("Dragan").getHealth());
+//        team2.getPlayers().get("Stefanakis").setHealth(3);
+//       To save player changes in files please use/uncomment writeToFile() [files];
+        FileManager.writeToFile(team1.getPlayers(),"team1");
+//        FileManager.writeToFile(team2.getPlayers(),"team2");
+
         System.out.println("===========================================");
         System.out.printf(team1.getTeamName() + " strength: %.01f%n", team1.calculateTeamStrength());
         System.out.printf(team2.getTeamName() + " strength: %.01f%n", team2.calculateTeamStrength());
-
+        FileManager.writeToFile(team1.getPlayers(),"team1");
         System.out.println("===========================================");
         playMatch(team1, team2);
         System.out.println("===========================================");

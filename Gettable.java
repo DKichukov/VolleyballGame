@@ -1,4 +1,4 @@
-package Homework;
+package Game;
 
 public interface Gettable {
     void train();

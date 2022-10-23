@@ -1,4 +1,4 @@
-package Homework;
+package Game;
 
 public class VolleyballPlayer implements Gettable {
     private String name;
@@ -15,8 +15,8 @@ public class VolleyballPlayer implements Gettable {
         this.name = name;
         this.age = age;
         this.position = position;
-        setStrength(strength);
-        setHealth(health);
+        this.strength = strength;
+        this.health = health;
     }
 
     public String getName() {

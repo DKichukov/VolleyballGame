@@ -1,5 +1,6 @@
-package Homework;
+package Game;
 
+import javax.xml.validation.Validator;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +10,7 @@ public class Team implements Playable, Comparator<Team> {
     private String teamName;
     private String stadiumName;
     private String coachName;
-    private HashMap<String, VolleyballPlayer> players;
+    private Map<String, VolleyballPlayer> players;
 
 
     public Team(String teamName) {
@@ -39,7 +40,6 @@ public class Team implements Playable, Comparator<Team> {
     }
 
 
-
     public void addPlayer(VolleyballPlayer p) {
         if (!players.containsKey(p.getName())) {
             players.put(p.getName(), p);
@@ -67,7 +67,7 @@ public class Team implements Playable, Comparator<Team> {
     public void teamTraining() {
         for (Map.Entry<String, VolleyballPlayer> p : players.entrySet()) {
             p.getValue().train();
-            FileManager.writeToFile(players,this.teamName);
+            FileManager.writeToFile((HashMap<String, VolleyballPlayer>) players,this.teamName);
         }
         System.out.println("All players of " + getTeamName() + " are training ..");
     }
@@ -76,7 +76,7 @@ public class Team implements Playable, Comparator<Team> {
     public void teamRest() {
         for (Map.Entry<String, VolleyballPlayer> p : players.entrySet()) {
             p.getValue().rest();
-            FileManager.writeToFile(players,this.teamName);
+            FileManager.writeToFile((HashMap<String, VolleyballPlayer>) players,this.teamName);
             System.out.println("All players of " + getTeamName() + " are resting ..");
         }
     }
