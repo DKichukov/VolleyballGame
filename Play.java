@@ -4,7 +4,7 @@ public class Play {
 
     public static void main(String[] args) {
 
-        // TODO: To test player's methods, uncomment next 7 rows!
+        // To test player's methods, uncomment next 7 rows!
        /* System.out.println("..........................................");
         VolleyballPlayer p1 = new VolleyballPlayer("Ivan",22,"Blocker",4,3);
         System.out.println("Initial player parameters: " +p1 +"\n"+ "----------------");
@@ -18,7 +18,7 @@ public class Play {
         Team team1 = new Team("CSKA", "CSKA-A", "PESHO");
         Team team2 = new Team("Ludogorets", "LUDOGORETS-B", "IVAN");
 
-        //TODO: If team files are empty use team's information to create them with some players. Uncomment next 8 rows
+        //If team files are empty use team's information to create them with some players. Uncomment next 8 rows
       /*  team1.addPlayer(new VolleyballPlayer("Ivan", 30, "Setter", 5, 1));
         team1.addPlayer(new VolleyballPlayer("Dragan", 40, "Libero", 10, 5));
         team1.addPlayer(new VolleyballPlayer("Peter", 20, "blocker", 8, 4));

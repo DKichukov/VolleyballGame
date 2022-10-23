@@ -1,6 +1,5 @@
 package Game;
 
-import javax.xml.validation.Validator;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
@@ -31,9 +30,6 @@ public class Team implements Playable, Comparator<Team> {
         return teamName;
     }
 
-    public void setTeamName(String teamName) {
-        this.teamName = teamName;
-    }
 
     public HashMap<String, VolleyballPlayer> getPlayers() {
         return new HashMap<>(this.players);
