@@ -36,7 +36,7 @@ public class Play {
         System.out.println("---------- Teams info ----------");
         System.out.println(team1 + "-----------------------------------------" +"\n" + team2);
 
-        //test to change parameter of the player
+        //try to change a parameter of the player
         System.out.println(team1.getPlayers().get("Dragan").getHealth());
         team1.getPlayers().get("Dragan").setHealth(3);
 //        team2.getPlayers().get("Stefanakis").setHealth(3);
